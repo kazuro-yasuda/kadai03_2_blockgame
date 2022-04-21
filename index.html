@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ブロック崩し</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>ブロック崩しゲーム</h1>
+    <h2>連続クリア記録更新にチャレンジ！</h2>
+
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <div class="save_wapper">
+      <div id="try">
+        <p class="p1">今回の記録</p>
+        <p class="p2"><span class="span1">0</span>ブロック</p>
+      </div>
+      <div id="memory">
+        <p class="p3">連続クリア記録</p>
+        <p class="p4"><span class="span2">0</span>回</p>
+      </div>
+      <textarea name="" id="memo" cols="60" rows="3" placeholder="今日の挑戦の感想"></textarea>
+
+
+      <button id="btn_s">SAVE</button>
+      <button id="btn_c">CLEAR</button>
+    </div>
+
+    <!-- jquery読み込み -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
